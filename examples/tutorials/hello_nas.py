@@ -114,7 +114,7 @@ class MyModelSpace(ModelSpace):
         # LayerChoice is used to select a layer between Conv2d and DwConv.
         self.conv2 = LayerChoice([
             nn.Conv2d(32, 64, 3, 1),nn.Conv2d(32, 72, 3, 1),nn.Conv2d(32, 96, 3, 1),nn.Conv2d(32, 128, 3, 1),
-            DepthwiseSeparableConv(32, 64),DepthwiseSeparableConv(48, 72),DepthwiseSeparableConv(48, 64)
+            DepthwiseSeparableConv(32, 64),DepthwiseSeparableConv(48, 72),DepthwiseSeparableConv(48, 64),
         ], label='conv2')
         # nni.choice is used to select a dropout rate.
         # The result can be used as parameters of `MutableXXX`.
