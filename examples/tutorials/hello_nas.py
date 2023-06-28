@@ -173,7 +173,7 @@ model_space
 
 import nni.nas.strategy as strategy
 #search_strategy = strategy.Random()  # dedup=False if deduplication is not wanted
-search_strategy = strategy.RegularizedEvolution
+search_strategy = strategy.RegularizedEvolution()
 # %%
 # Pick or customize a model evaluator
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
