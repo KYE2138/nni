@@ -285,13 +285,13 @@ exp = NasExperiment(model_space, evaluator, search_strategy)
 
 exp.config.max_trial_number = 10   # spawn 3 trials at most
 exp.config.trial_concurrency = 3  # will run 1 trial concurrently
-exp.config.trial_gpu_number = 2   # will not use GPU
+#exp.config.trial_gpu_number = 0   # will not use GPU
 
 # %%
 # Remember to set the following config if you want to GPU.
 # ``use_active_gpu`` should be set true if you wish to use an occupied GPU (possibly running a GUI)::
 #
-#    exp.config.trial_gpu_number = 1
+exp.config.trial_gpu_number = 3
 exp.config.training_service.use_active_gpu = True
 #
 # Launch the experiment. The experiment should take several minutes to finish on a workstation with 2 GPUs.
