@@ -285,7 +285,7 @@ exp = NasExperiment(model_space, evaluator, search_strategy)
 
 exp.config.max_trial_number = 3   # spawn 3 trials at most
 exp.config.trial_concurrency = 1  # will run 1 trial concurrently
-exp.config.trial_gpu_number = 3   # will not use GPU
+exp.config.trial_gpu_number = 2   # will not use GPU
 
 # %%
 # Remember to set the following config if you want to GPU.
