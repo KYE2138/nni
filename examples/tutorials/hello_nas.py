@@ -292,7 +292,7 @@ exp.config.trial_gpu_number = 3   # will not use GPU
 # ``use_active_gpu`` should be set true if you wish to use an occupied GPU (possibly running a GUI)::
 #
 #    exp.config.trial_gpu_number = 1
-#    exp.config.training_service.use_active_gpu = True
+    exp.config.training_service.use_active_gpu = True
 #
 # Launch the experiment. The experiment should take several minutes to finish on a workstation with 2 GPUs.
 
